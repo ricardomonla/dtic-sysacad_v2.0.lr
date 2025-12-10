@@ -1,0 +1,1 @@
+# dtic-sysacad_v2.0.lr
