@@ -1,8 +1,27 @@
-# Ignorar dependencias de Node.js
+#  -----------------------------------------------------------------------------
+#  Project:     SysACAD Web 2.0
+#  File:        .gitignore
+#  Version:     1.1.0
+#  Date:        2025-12-10
+#  Author:      Lic. Ricardo MONLA
+#  Último Cambio: 2025-12-10 - Adaptación para fase de estudio con preservación máxima de información
+#  Description: Configuración de archivos a ignorar durante la fase de estudio técnico
+#  -----------------------------------------------------------------------------
+
+# .gitignore para Fase de Estudio - SysACAD Web 2.0
+# En esta fase, preservamos la máxima información posible para análisis técnico
+# Solo ignoramos lo que es claramente irrelevante o sensible
+
+# ========== IGNORAR SÓLO LO ESENCIAL ==========
+
+# 1. Dependencias y builds (pueden ser regenerados)
 node_modules/
 .next/
+dist/
+build/
+out/
 
-# Ignorar archivos de configuración local
+# 2. Archivos de entorno sensibles (nunca deben committearse)
 .env
 .env.local
 .env.development
@@ -10,12 +29,17 @@ node_modules/
 .env.production
 .env.*.local
 
-# Ignorar archivos de build y distribución
-dist/
-build/
-out/
+# 3. Archivos de sistema temporales
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# Ignorar archivos de logs
+# 4. Archivos de cache que pueden regenerarse
+.next/cache/
+.cache/
+
+# 5. Archivos de logs (pueden ser recreados)
 logs/
 *.log
 npm-debug.log*
@@ -23,61 +47,31 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Ignorar archivos de IDE y editor
-.vscode/
-.idea/
-*.swp
-*.swo
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.user
-*.userosscache
-*.cache
-
-# Ignorar archivos de sistema
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Ignorar archivos de coverage
-coverage/
-*.lcov
-
-# Ignorar archivos de cache
-.cache/
-*.cache
-
-# Ignorar archivos de Next.js específicos
-.next/cache/
-
-
-# Ignorar archivos de configuración de desarrollo
-*.local
-
-# Ignorar archivos de backup
+# 6. Archivos de backup (versiones antiguas)
 *.bak
 *.backup
 *.old
 
-# Ignorar archivos de datos sensibles
+# 7. Archivos sensibles de seguridad
 *.key
 *.pem
 *.cert
 *.crt
 
-# Ignorar archivos de base de datos local
+# 8. Bases de datos locales (pueden ser recreadas)
 *.db
 *.sqlite
 *.sqlite3
 
-# Ignorar archivos de configuración de herramientas
-.vscode/
-.idea/
-*.iml
+# ========== PRESERVAR PARA ESTUDIO ==========
+# NOTA: Durante la fase de estudio, NO ignoramos:
+# - Configuraciones de IDE (.vscode/, .idea/) - útiles para entender flujo de trabajo
+# - Archivos de configuración de herramientas (jest.config.js, etc.) - relevantes para análisis
+# - Archivos .local que no sean de entorno - pueden contener configuración útil
+# - Cualquier archivo que pueda contener información de desarrollo o configuración
 
-# Ignorar archivos de configuración de pruebas
-jest.config.js
-jest.config.json
+# ========== COMENTARIOS SOBRE FASE DE ESTUDIO ==========
+# Este .gitignore está diseñado específicamente para la fase de estudio inicial.
+# Su objetivo es preservar la máxima información posible que pueda ser relevante
+# para el análisis técnico de la aplicación SysACAD Web 2.0.
+# En fases posteriores de desarrollo, se puede ajustar para ser más restrictivo.
