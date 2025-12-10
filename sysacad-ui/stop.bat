@@ -1,0 +1,3 @@
+@echo off
+echo Deteniendo Sysacad UI (si corre en consola)...
+for /f "tokens=2" %%a in ('tasklist ^| find "node.exe"') do taskkill /PID %%a /F
