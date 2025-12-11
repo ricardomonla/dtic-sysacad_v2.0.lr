@@ -20,7 +20,7 @@ const APP_CONFIG = {
     // Información básica de la aplicación
     name: "SysACAD Web 2.0",
     fullName: "SysACAD Web 2.0",
-    version: "0.1.0",
+    version: "0.1.1",
 
     // Estructura de directorios
     directories: {

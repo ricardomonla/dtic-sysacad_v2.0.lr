@@ -1,5 +1,16 @@
 # CHANGELOG - SysACAD Web 2.0 - Estudio Inicial
 
+## [0.1.1] - 2025-12-11
+
+### Corregido
+- Resolución de conflictos de dependencias en Dockerfile con --legacy-peer-deps
+- Eliminación de .next/ de .gitignore para permitir despliegue Docker
+- Documentación de pruebas de funcionamiento en app-docs/251210-2352_PruebasFuncionamiento_SysACAD.md
+
+### Añadido
+- Pruebas de funcionamiento exitosas de sysacad-ui_v2.0_lnx
+- Documentación detallada de configuración y resultados
+
 ## [0.1.0] - 2025-12-10
 
 ### Añadido

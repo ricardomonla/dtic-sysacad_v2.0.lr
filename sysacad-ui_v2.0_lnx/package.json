@@ -1,0 +1,47 @@
+{
+  "name": "sysacad-web-2.0",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "node .next/standalone/server.js",
+    "lint": "next lint",
+    "deploy:local": "powershell -ExecutionPolicy Bypass -File .\\scripts\\build_deploy.ps1",
+    "start:deploy": "node server.js"
+  },
+  "engines": {
+    "node": ">=18 <=22"
+  },
+  "dependencies": {
+    "@react-pdf/renderer": "^3.4.4",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "apexcharts": "^3.41.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.6.2",
+    "crypto-js": "^4.2.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "flatpickr": "^4.6.13",
+    "jsvectormap": "^1.5.1",
+    "jwt-decode": "^4.0.0",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "next": "^14.2.5",
+    "next-auth": "^4.24.7",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-dom": "18.2.0",
+    "react-flatpickr": "^3.10.13",
+    "react-idle-timer": "^5.7.2",
+    "react-table": "^7.8.0",
+    "sharp": "^0.34.4",
+    "sort-by": "^0.0.2",
+    "swiper": "^10.0.4",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
+}

@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app\\\\estudiante\\\\comprobantes\\\\inscripcion-examen\\\\page.tsx -> @react-pdf/renderer":{"id":5738,"files":[]},"components\\\\ComprobantePDF\\\\ComprobanteInscripcionCursado.tsx -> @react-pdf/renderer":{"id":5738,"files":[]},"components\\\\ComprobantePDF\\\\ComprobanteInscripcionExamen.tsx -> @react-pdf/renderer":{"id":5738,"files":[]}}';

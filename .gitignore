@@ -4,7 +4,7 @@
 #  Version:     1.1.0
 #  Date:        2025-12-10
 #  Author:      Lic. Ricardo MONLA
-#  Último Cambio: 2025-12-10 - Adaptación para fase de estudio con preservación máxima de información
+#  Último Cambio: 2025-12-11 - Eliminado .next/ de gitignore para permitir despliegue Docker
 #  Description: Configuración de archivos a ignorar durante la fase de estudio técnico
 #  -----------------------------------------------------------------------------
 
@@ -16,7 +16,6 @@
 
 # 1. Dependencias y builds (pueden ser regenerados)
 node_modules/
-.next/
 dist/
 build/
 out/

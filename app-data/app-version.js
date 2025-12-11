@@ -16,7 +16,7 @@
  */
 
 // ========== CONFIGURACIÓN DE VERSIÓN ==========
-const APP_VERSION = "0.1.0";
+const APP_VERSION = "0.1.1";
 const APP_NAME = "SysACAD Web 2.0";
 const APP_FULL_NAME = `${APP_NAME} v${APP_VERSION}`;
 
@@ -37,6 +37,16 @@ const VERSION_HISTORY = {
             "Configuración centralizada para evaluación técnica"
         ],
         type: "Estudio"
+    },
+    "0.1.1": {
+        date: "2025-12-11",
+        changes: [
+            "Corrección de conflictos de dependencias en Dockerfile con --legacy-peer-deps",
+            "Eliminación de .next/ de .gitignore para permitir despliegue Docker",
+            "Pruebas de funcionamiento exitosas de sysacad-ui_v2.0_lnx",
+            "Documentación de pruebas en app-docs/251210-2352_PruebasFuncionamiento_SysACAD.md"
+        ],
+        type: "Corregido"
     }
 };
 
